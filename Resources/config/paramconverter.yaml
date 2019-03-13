@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: false
+    autoconfigure: false
+    public: false
+
+  FLE\ScalarConverterBundle\ParamConverter\QueryConverter:
+    tags:
+      - { name: request.param_converter, converter: query }
+
+  FLE\ScalarConverterBundle\ParamConverter\HeaderConverter:
+    tags:
+      - { name: request.param_converter, converter: header }

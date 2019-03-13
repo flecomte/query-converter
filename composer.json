@@ -1,0 +1,42 @@
+{
+    "name": "fle/scalar-converter-bundle",
+    "description": "Inject scalar parameters to the routes",
+    "keywords": ["symfony", "ParamConverter", "scalar"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabrice Lecomte",
+            "email": "rusk23@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "sensio/framework-extra-bundle": "^5.2",
+        "symfony/dependency-injection": "^4.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "phpunit/phpunit": "7.5.*",
+        "symfony/var-dumper": "4.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "FLE\\ScalarConverterBundle\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FLE\\ScalarConverterBundle\\Tests\\": "Tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability" : "dev"
+}
